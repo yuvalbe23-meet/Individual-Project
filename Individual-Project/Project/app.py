@@ -28,6 +28,7 @@ if db.child("WaitingList").get().val() is None:
 
 
 
+
 @app.route('/signout')
 def signout():
     login_session['user'] = None
@@ -94,14 +95,17 @@ def product():
 @app.route('/wating', methods=['GET','POST'])
 def wating():
     if request.method=='POST':
-        s=int(db.child("WaitingList").get().val())+1
-        db.child("WaitingList").set(s)
-        w=db.child("Users").child(login_session['user']['localId']).get().val()
-        w['waitingnum']=s
-        db.child("Users").child(login_session['user']['localId']).update(w)
+        if db.child("WaitingList").get().val() != None:
+            s=int(db.child("WaitingList").get().val())+1
+            db.child("WaitingList").set(s)
+            w=db.child("Users").child(login_session['user']['localId']).get().val()
+            w['waitingnum']=s
+            db.child("Users").child(login_session['user']['localId']).update(w)
     return render_template("wating.html", userr= db.child("Users").child(login_session['user']['localId']).get().val()['waitingnum'])
 
-
+@app.route('/last', methods=['GET','POST'])
+def last():
+    return render_template("last.html")
 
 if __name__ == '__main__':
     app.run(debug=True)

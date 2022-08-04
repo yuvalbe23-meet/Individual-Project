@@ -1,4 +1,4 @@
-var options = ["Win", "Lose"];
+var options = ["Win", "Lose","Lose","Lose","Lose","Lose","Lose","Lose","Lose","Lose","Lose","Lose","Lose","Lose","Lose","Lose","Lose"];
 
 var startAngle = 0;
 var arc = Math.PI / (options.length / 2);
@@ -132,6 +132,6 @@ function getres(text){
 
   if (text == "Win") {
     console.log("CCCC");
-    t.visibility= t.style.display= "visible"}
+    t.style.display= "block"}
 }
 drawRouletteWheel();

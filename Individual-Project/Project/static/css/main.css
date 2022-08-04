@@ -172,6 +172,11 @@ h5, .h5, h6, .h6 {
 
 }
 
+#wino{
+  display: none;
+}
+
+
 h1, .h1 {
   font-size: 3.6rem;
   line-height: 1.222;
