@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+ 
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="static/css/base.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/vendor.css">
+
+    <style type="text/css" media="screen">
+        .s-styles { 
+            padding-top: 16rem;
+            padding-bottom: 16rem;
+            background-color: #ffffff;
+        }
+    </style>
+
+    <!-- script
+    ================================================== -->
+    <script src="static/js/modernizr.js"></script>
+
+
+
+</head>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a href="index.html">
+                <img style="width: 70px" src="static/images/complogo.jpg" alt="Homepage">
+            </a>
+        </div>
+
+        <div class="header-content">
+    
+            <nav class="row header-nav-wrap">
+                <ul class="header-nav">
+                   <li><a  title="Intro" style="color: white; font-size: 25px" > Hello, {{users}}</a></li> 
+
+                    <li><a href="/signout">Sign Out</a></li> 
+                </ul>
+            </nav> <!-- end header-nav-wrap -->
+
+            
+
+        </div> <!-- end header-content -->
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> 
+
+
+  <section id="hero" class="s-hero target-section" data-parallax="scroll" data-image-src="static/images/watchwait.jpg" data-natural-width=615 data-natural-height=300 data-position-y=right>
+
+        <div class="row hero-content">
+
+            <div class="column large-medium">
+
+                <h1>
+                Your place in the waiting list: {{userr}}
+                </h1>
+
+                <ul class="hero-social">
+                    <li>
+                        <a href="#0" title=""></a>
+                    </li>
+                    <li>
+                        <a href="#0" title=""></a>
+                    </li>
+                    <li>
+                        <a href="#0" title=""></a>
+                    </li>
+                </ul> <!-- end hero-social -->
+
+            </div> 
+
+        </div> <!-- end hero-content -->
+
+        <div class="hero-scroll">
+            <a href="#styles" class="scroll-link smoothscroll">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 24l-8-9h6v-15h4v15h6z"/></svg>
+            </a>
+        </div> <!-- end hero-scroll -->
+
+    </section> <!-- end s-hero -->
+
+
+
+    <!-- styles
+    ================================================== -->
+    <section id="styles" class="s-styles page-content">
+     
+
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+
+      <input type="button" value="1 spin: 100$" style="margin-right:50px ;" id='spin' />
+<canvas id="canvas" width="500" height="500" style="text-align:center;"></canvas>
+
+  <script  src="static/js/scriptrol.js"></script>
+
+        <div class="row add-bottom">
+
+            <div class="column large-full">
+
+                
+
+            </div>
+
+        </div>
+
+  
+        <div class="row">
+
+            <div id="wino" class="column large-6 tab-full" hidden>
+
+                <h3>Our Watch</h3>
+
+                <img src="static/images/Watchimg.jpg">
+
+                <p>
+Unlike the other watches, TopWatch is a symbol for success, most people are using regular watches, but TopWatch is limited and it shows that you are special. TopWatch gives you a quality that matches the price and makes you different, not like other watches with less quality and rarity.
+
+                </p>
+
+                <p>
+                  <form action="/product" method="POST">
+                  <button class="btn h-full-width" style.display="none"> Buy now</button>
+                </form>
+                </p>
+
+            </div>
+      </div>
+            <div  class="column large-6 tab-full">
+
+                <h3>Benefits</h3>
+
+                <p class="drop-cap">In the last 2.5 years, people didn't really have any physical meetings (businesswise, socialwise), many businesses crashed and people want to get out and relive their life. Meet some old friends or boost your business again, because of that, you can start and  to improve your business and show that COVID didn't really affect you. 
+
+                </p>
+
+               
+
+            </div>
+
+        </div> <!-- end row -->
+
+        
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer h-dark-bg">
+        
+        <div class="right-vert-line"></div>
+
+        <div class="row s-footer__main">
+            <div class="column large-6">
+                <div class="section-intro">
+                    <h3 class="subhead">Get In Touch</h3>
+
+                    <h1 class="display-1">
+                    Hey, my name is Yuval Berkovich and im a y2 student,
+                    feel free to contact me!
+                    </h1>
+                </div>
+
+                
+            </div>
+
+            <div class="column large-5">
+                <div class="footer-contacts">
+                    <div class="footer-contact-block">
+                        <h5 class="footer-contact-block__header">
+                            Email
+                        </h5>
+                        <p class="footer-contact-block__content">
+                            <a href="mailto:#0">yuvalberkovich11@gmail.com</a>
+                        </p>
+                    </div> <!-- end footer-contact-block -->
+                    <div class="footer-contact-block">
+                        <h5 class="footer-contact-block__header">
+                            Phone
+                        </h5>
+                        <p class="footer-contact-block__content">
+                            <a href="tel:+1975432345">+972-544551033</a>
+                        </p>
+                    </div> <!-- end footer-contact-block -->
+                    <br>
+                    <div class="footer-contact-block">
+                       
+                        
+                    </div> <!-- end footer-contact-block -->
+                </div>
+            </div>
+        </div> <!-- end s-footer__main -->
+
+        <div class="row s-footer__bottom">
+            <div class="column large-full ss-copyright">
+                
+            </div> <!-- end ss-copyright -->
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+        </div> <!-- end s-footer__bottom -->
+
+    </footer> <!-- end s-footer -->
+
+
+  
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <script src="static/js/plugins.js"></script>
+    <script src="static/js/main.js"></script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="button" value="spin" style="float:left;" id='spin' />
+<canvas id="canvas" width="500" height="500" style="text-align:center;"></canvas>
+
+  <script  src="static/js/scriptrol.js"></script>
